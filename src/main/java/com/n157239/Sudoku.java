@@ -72,6 +72,9 @@ public class Sudoku extends PApplet implements PanelInterface, DrawInterface {
         if (key == DELETE) {
             mainGrid.onKeyTyped(0);
         }
+        if (key == ' ') {
+            saveFrame("frame.png");
+        }
         drawStuff();
     }
 
@@ -130,8 +133,8 @@ public class Sudoku extends PApplet implements PanelInterface, DrawInterface {
         drawStuff();
     }
 
-    @SuppressWarnings("unused")
-    private void onNewFileSelected(File selection) {
+    @SuppressWarnings({"unused", "WeakerAccess"})
+    public void onNewFileSelected(File selection) {
         if (selection == null) {//create a blank grid
             if (mainGrid != null) {
                 mainGrid = mainGrid.copyFrame();
@@ -155,8 +158,8 @@ public class Sudoku extends PApplet implements PanelInterface, DrawInterface {
         rippleSignal=10;
     }
 
-    @SuppressWarnings("unused")
-    private void onSaveFileSelected(File selection) {
+    @SuppressWarnings({"WeakerAccess", "unused"})
+    public void onSaveFileSelected(File selection) {
         if (selection != null) {
             mainGrid.specifyFilePath(selection.getAbsolutePath());
             mainGrid.exportGrid();

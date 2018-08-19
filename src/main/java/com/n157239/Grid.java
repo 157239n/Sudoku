@@ -107,14 +107,7 @@ class Grid {
     private String filePath = null;
     boolean saved = false;
 
-
-    /**
-     * Constructs a grid given a Processing sketch
-     *
-     * @param parent the Processing sketch
-     */
-    @SuppressWarnings("WeakerAccess")
-    public Grid(PApplet parent) {
+    private void init(PApplet parent){
         numbers = new int[9][9];
         versioned = new boolean[9][9];
         for (int i = 0; i < 9; i++) {
@@ -125,6 +118,16 @@ class Grid {
         }
         versioning = false;
         this.parent = parent;
+    }
+
+    /**
+     * Constructs a grid given a Processing sketch
+     *
+     * @param parent the Processing sketch
+     */
+    @SuppressWarnings("WeakerAccess")
+    public Grid(PApplet parent) {
+        init(parent);
     }
 
     /**
@@ -139,16 +142,16 @@ class Grid {
      */
     @SuppressWarnings({"SameParameterValue", "WeakerAccess"})
     public Grid setFrame(int locX, int locY, int width, int height) {
-        if (location.x < 0) {
+        if (locX < 0) {
             throw new IllegalArgumentException("The panel will be outside of the sketch");
         }
-        if (location.x + width > dimension.x) {
+        if (locX + width > parent.width) {
             throw new IllegalArgumentException("The panel will be outside of the sketch");
         }
         if (locY < 0) {
             throw new IllegalArgumentException("The panel will be outside of the sketch");
         }
-        if (locY + height > dimension.y) {
+        if (locY + height > parent.height) {
             throw new IllegalArgumentException("The panel will be outside of the sketch");
         }
         location = new PVector(locX, locY);
@@ -284,20 +287,39 @@ class Grid {
         this.filePath = filePath;
     }
 
-    private void importGrid(String file) {
-        filePath = file;
-        String[] strings = parent.loadStrings(file);
-        for (int j = 0; j < 9; j++) {
-            int[] ints = PApplet.parseInt(PApplet.splitTokens(strings[j], " "));
-            for (int i = 0; i < 9; i++) {
-                if (ints[i] < 0) {
-                    numbers[i][j] = -ints[i];
-                    versioned[i][j] = true;
-                } else {
-                    numbers[i][j] = ints[i];
-                    versioned[i][j] = false;
+    /**
+     * Imports a Grid from a file.
+     *
+     * @param file the path to the file
+     * @return whether the operation was successful
+     */
+    private boolean importGrid(String file) {
+        try {
+            filePath = file;
+            String[] strings = parent.loadStrings(file);
+            for (int j = 0; j < 9; j++) {
+                int[] ints = PApplet.parseInt(PApplet.splitTokens(strings[j], " "));
+                for (int i = 0; i < 9; i++) {
+                    if(ints[i] == 0){
+                        numbers[i][j] = 0;
+                        versioned[i][j] = false;
+                    } else if (ints[i] < 0 && ints[i] >= -9) {
+                        numbers[i][j] = -ints[i];
+                        versioned[i][j] = true;
+                    } else if(ints[i] > 0 && ints[i] <= 9) {
+                        numbers[i][j] = ints[i];
+                        versioned[i][j] = false;
+                    } else {
+                        throw new RuntimeException();
+                    }
                 }
             }
+            return true;
+        } catch (RuntimeException e){
+            //something wrong, create a blank Grid
+            filePath = null;
+            init(parent);
+            return false;
         }
     }
 
@@ -318,9 +340,9 @@ class Grid {
      * Tries to import a com.n157239.Grid from a file
      */
     @SuppressWarnings("WeakerAccess")
-    public void importGrid() {
+    public boolean importGrid() {
         if (filePath != null) {
-            importGrid(filePath);
+            return importGrid(filePath);
         } else {
             throw new NoFileSpecified();
         }

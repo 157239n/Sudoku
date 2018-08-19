@@ -3,15 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0ba97055-ae59-47e9-b3b9-b23c7c3b2c89" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sudoku.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DrawInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Env.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Grid.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Panel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PanelInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sudoku.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GridTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/n157239/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/n157239/Grid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/n157239/Sudoku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/n157239/Sudoku.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,6 +15,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Sudoku$Sudoku.ic" NAME="Sudoku Coverage Results" MODIFIED="1534709469169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
@@ -29,11 +25,61 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="PanelInterface.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PanelInterface.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/n157239/PanelInterface.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="96">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Grid.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/n157239/Grid.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="319" column="28" selection-start-line="319" selection-start-column="28" selection-end-line="319" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4290#4291#0" expanded="true" />
+                <element signature="e#4311#4312#0" expanded="true" />
+                <element signature="e#11249#11250#0" expanded="true" />
+                <element signature="e#11289#11290#0" expanded="true" />
+                <element signature="e#15536#15537#0" expanded="true" />
+                <element signature="e#15623#15624#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sudoku.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/n157239/Sudoku.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="454">
+              <caret line="151" column="28" selection-start-line="151" selection-start-column="28" selection-end-line="151" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#Sudoku#0" />
+                <element signature="method#setup#0;class#Sudoku#0" />
+                <element signature="method#draw#0;class#Sudoku#0" />
+                <element signature="method#drawStuff#0;class#Sudoku#0" />
+                <element signature="method#mouseClicked#0;class#Sudoku#0" />
+                <element signature="docComment;method#keyTyped#0;class#Sudoku#0" />
+                <element signature="docComment;method#keyPressed#0;class#Sudoku#0" />
+                <element signature="method#keyPressed#0;class#Sudoku#0" />
+                <element signature="docComment;method#onSelection#0;class#Sudoku#0" />
+                <element signature="method#onSelection#0;class#Sudoku#0" />
+                <element signature="docComment;method#onSave#0;class#Sudoku#0" />
+                <element signature="method#onSave#0;class#Sudoku#0" />
+                <element signature="docComment;method#onNew#0;class#Sudoku#0" />
+                <element signature="e#3965#4010#0" expanded="true" />
+                <element signature="e#4854#4899#0" expanded="true" />
+                <element signature="method#onSaveFileSelected#0;class#Sudoku#0" />
+                <element signature="docComment;method#onBranch#0;class#Sudoku#0" />
+                <element signature="method#onBranch#0;class#Sudoku#0" />
+                <element signature="docComment;method#onDelete#0;class#Sudoku#0" />
+                <element signature="method#onDelete#0;class#Sudoku#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,6 +109,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Sudoku.java" />
         <option value="$PROJECT_DIR$/src/main/java/DrawInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/n157239/DrawInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/n157239/Sudoku.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/n157239/Grid.java" />
       </list>
     </option>
   </component>
@@ -230,18 +278,19 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32988358" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32988358" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32958803" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32988358" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496879" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32988358" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2496879" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32988358" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39974126" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -281,6 +330,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -307,26 +361,12 @@
           <caret line="1" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#584#585#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#3840#3873#0" expanded="true" />
-            <element signature="e#4571#4628#0" expanded="true" />
-            <element signature="e#6856#6889#0" expanded="true" />
-            <element signature="e#10951#10984#0" expanded="true" />
-            <element signature="e#10899#10900#0" expanded="true" />
-            <element signature="e#10939#10940#0" expanded="true" />
-            <element signature="e#12036#12069#0" expanded="true" />
-            <element signature="e#12365#12398#0" expanded="true" />
-            <element signature="e#12730#12763#0" expanded="true" />
-            <element signature="e#13292#13325#0" expanded="true" />
-            <element signature="e#14136#14169#0" expanded="true" />
-            <element signature="e#14845#14846#0" expanded="true" />
-            <element signature="e#14932#14933#0" expanded="true" />
-            <element signature="e#15303#15336#0" expanded="true" />
-            <element signature="e#15592#15625#0" expanded="true" />
-            <element signature="e#15866#15899#0" expanded="true" />
-            <element signature="e#16062#16095#0" expanded="true" />
-            <element signature="e#16420#16453#0" expanded="true" />
+            <element signature="e#4290#4291#0" expanded="true" />
+            <element signature="e#4311#4312#0" expanded="true" />
+            <element signature="e#11249#11250#0" expanded="true" />
+            <element signature="e#11289#11290#0" expanded="true" />
+            <element signature="e#15536#15537#0" expanded="true" />
+            <element signature="e#15623#15624#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -343,7 +383,6 @@
             <element signature="method#drawStuff#0;class#Sudoku#0" />
             <element signature="method#mouseClicked#0;class#Sudoku#0" />
             <element signature="docComment;method#keyTyped#0;class#Sudoku#0" />
-            <element signature="method#keyTyped#0;class#Sudoku#0" />
             <element signature="docComment;method#keyPressed#0;class#Sudoku#0" />
             <element signature="method#keyPressed#0;class#Sudoku#0" />
             <element signature="docComment;method#onSelection#0;class#Sudoku#0" />
@@ -351,8 +390,8 @@
             <element signature="docComment;method#onSave#0;class#Sudoku#0" />
             <element signature="method#onSave#0;class#Sudoku#0" />
             <element signature="docComment;method#onNew#0;class#Sudoku#0" />
-            <element signature="method#onNew#0;class#Sudoku#0" />
-            <element signature="method#onNewFileSelected#0;class#Sudoku#0" />
+            <element signature="e#3965#4010#0" expanded="true" />
+            <element signature="e#4854#4899#0" expanded="true" />
             <element signature="method#onSaveFileSelected#0;class#Sudoku#0" />
             <element signature="docComment;method#onBranch#0;class#Sudoku#0" />
             <element signature="method#onBranch#0;class#Sudoku#0" />
@@ -393,67 +432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/n157239/Sudoku.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Sudoku#0" />
-            <element signature="method#setup#0;class#Sudoku#0" />
-            <element signature="method#draw#0;class#Sudoku#0" />
-            <element signature="method#drawStuff#0;class#Sudoku#0" />
-            <element signature="method#mouseClicked#0;class#Sudoku#0" />
-            <element signature="docComment;method#keyTyped#0;class#Sudoku#0" />
-            <element signature="method#keyTyped#0;class#Sudoku#0" />
-            <element signature="docComment;method#keyPressed#0;class#Sudoku#0" />
-            <element signature="method#keyPressed#0;class#Sudoku#0" />
-            <element signature="docComment;method#onSelection#0;class#Sudoku#0" />
-            <element signature="method#onSelection#0;class#Sudoku#0" />
-            <element signature="docComment;method#onSave#0;class#Sudoku#0" />
-            <element signature="method#onSave#0;class#Sudoku#0" />
-            <element signature="docComment;method#onNew#0;class#Sudoku#0" />
-            <element signature="method#onNew#0;class#Sudoku#0" />
-            <element signature="method#onNewFileSelected#0;class#Sudoku#0" />
-            <element signature="method#onSaveFileSelected#0;class#Sudoku#0" />
-            <element signature="docComment;method#onBranch#0;class#Sudoku#0" />
-            <element signature="method#onBranch#0;class#Sudoku#0" />
-            <element signature="docComment;method#onDelete#0;class#Sudoku#0" />
-            <element signature="method#onDelete#0;class#Sudoku#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/n157239/Grid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#584#585#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#3840#3873#0" expanded="true" />
-            <element signature="e#4571#4628#0" expanded="true" />
-            <element signature="e#6856#6889#0" expanded="true" />
-            <element signature="e#10951#10984#0" expanded="true" />
-            <element signature="e#10899#10900#0" expanded="true" />
-            <element signature="e#10939#10940#0" expanded="true" />
-            <element signature="e#12036#12069#0" expanded="true" />
-            <element signature="e#12365#12398#0" expanded="true" />
-            <element signature="e#12730#12763#0" expanded="true" />
-            <element signature="e#13292#13325#0" expanded="true" />
-            <element signature="e#14136#14169#0" expanded="true" />
-            <element signature="e#14845#14846#0" expanded="true" />
-            <element signature="e#14932#14933#0" expanded="true" />
-            <element signature="e#15303#15336#0" expanded="true" />
-            <element signature="e#15592#15625#0" expanded="true" />
-            <element signature="e#15866#15899#0" expanded="true" />
-            <element signature="e#16062#16095#0" expanded="true" />
-            <element signature="e#16420#16453#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -500,13 +478,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/processing/core/3.3.7/core-3.3.7.jar!/processing/core/PApplet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="2329" column="16" selection-start-line="2329" selection-start-column="16" selection-end-line="2329" selection-end-column="16" />
+          <folding>
+            <element signature="e#72768#72769#0" expanded="true" />
+            <element signature="e#72830#72831#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/n157239/PanelInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/n157239/Grid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="319" column="28" selection-start-line="319" selection-start-column="28" selection-end-line="319" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4290#4291#0" expanded="true" />
+            <element signature="e#4311#4312#0" expanded="true" />
+            <element signature="e#11249#11250#0" expanded="true" />
+            <element signature="e#11289#11290#0" expanded="true" />
+            <element signature="e#15536#15537#0" expanded="true" />
+            <element signature="e#15623#15624#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/n157239/Sudoku.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="151" column="28" selection-start-line="151" selection-start-column="28" selection-end-line="151" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#Sudoku#0" />
+            <element signature="method#setup#0;class#Sudoku#0" />
+            <element signature="method#draw#0;class#Sudoku#0" />
+            <element signature="method#drawStuff#0;class#Sudoku#0" />
+            <element signature="method#mouseClicked#0;class#Sudoku#0" />
+            <element signature="docComment;method#keyTyped#0;class#Sudoku#0" />
+            <element signature="docComment;method#keyPressed#0;class#Sudoku#0" />
+            <element signature="method#keyPressed#0;class#Sudoku#0" />
+            <element signature="docComment;method#onSelection#0;class#Sudoku#0" />
+            <element signature="method#onSelection#0;class#Sudoku#0" />
+            <element signature="docComment;method#onSave#0;class#Sudoku#0" />
+            <element signature="method#onSave#0;class#Sudoku#0" />
+            <element signature="docComment;method#onNew#0;class#Sudoku#0" />
+            <element signature="e#3965#4010#0" expanded="true" />
+            <element signature="e#4854#4899#0" expanded="true" />
+            <element signature="method#onSaveFileSelected#0;class#Sudoku#0" />
+            <element signature="docComment;method#onBranch#0;class#Sudoku#0" />
+            <element signature="method#onBranch#0;class#Sudoku#0" />
+            <element signature="docComment;method#onDelete#0;class#Sudoku#0" />
+            <element signature="method#onDelete#0;class#Sudoku#0" />
+          </folding>
         </state>
       </provider>
     </entry>
