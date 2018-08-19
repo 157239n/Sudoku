@@ -22,6 +22,10 @@ You can then populate the board with values:
 
 You can move around using the arrow keys, delete a cell by pressing delete, click to select a cell and click again to deselect it.
 
+Occasionally you get a green flash when you have completed a square, a row or a column:
+
+![](https://i.imgur.com/kNA5RAK.png)
+
 So let's say that you got stuck, you can't think of a solution anymore and you really want to guess. Then you can click branch. This will branch the current board into a new board just like the original.
 
 And let's say you have guessed some numbers:
@@ -30,15 +34,11 @@ And let's say you have guessed some numbers:
 
 The numbers from the moment you choose to branch are colored blue to indicate that they may be wrong.
 
-Occasionally you get a green flash when you have completed a square, a row or a column:
-
-![](https://i.imgur.com/kNA5RAK.png)
-
 Now, if you branch version 2, a version 3 will be created and every guesses from version 2 will be considered right (i.e colored as black) and all the new numbers from then on will be blue:
 
 ![](https://i.imgur.com/CaN3mVF.png)
 
-You can delete branches at any time. You can also save a branch into a file. You can set the extension to anything you like, it's still just a text file. The text file is quite easy to understand. This is an example saved board from version 3:
+You can delete branches at any time. You can also save a branch into a file. You can set the extension to anything you like, it's still just a text file. The text file is quite easy to understand. This is an example of a saved board from version 3:
 
 ```
 2 9 5 7 0 0 8 6 0 
@@ -52,7 +52,7 @@ You can delete branches at any time. You can also save a branch into a file. You
 0 5 4 0 0 8 6 7 2 
 ```
 
-Pretty simple. "0" for blank, positive number for the values we are sure about (i.e colored black) and negative numbers for values we aren't sure about (i.e colored blue).
+Pretty simple. "0" for blank, positive numbers for the values we are sure about (i.e colored black) and negative numbers for values we aren't sure about (i.e colored blue).
 
 Please note that currently, it does not detect illegal states. The only time when it detects them is when you have completed a row, column or square and it flashes green. If if does not flash when you have completed them then the board is in an illegal state.
 
