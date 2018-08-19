@@ -23,8 +23,13 @@ jobs:
     steps:
       - checkout
       # installing processing package
-      - run: echo "Start installing processing"
-      - run: mvn install:install-file -DgroupId="processing" -DartifactId="core" -Dversion="3.3.7" -Dpackaging=jar -Dfile="lib/core.jar" -DgeneratePom=true
+      - run: echo "Installing processing"
+      - run: mvn install:install-file -Dfile="lib/core.jar" -DgroupId="processing" -DartifactId="core" -Dversion="3.3.7" -Dpackaging=jar -DgeneratePom=true
       # run tests!
-      - run: echo "Start running tests"
+      - run: echo "Running tests"
       - run: mvn test
+      # create executable jar
+      - run: echo "Creating executable jars"
+      - run: mvn clean compile assembly:single
+      # copy executable to the project directory
+      - run: mv target/*.jar Sudoku.jar

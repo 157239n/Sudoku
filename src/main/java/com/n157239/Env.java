@@ -1,10 +1,7 @@
+package com.n157239;
+
 /**
- * Represents the environment. <br>
- * <br>
- * This class contains all the static methods needed for day-to-day operations.<br>
- *
- * @author www.157239n.com
- * @version 1.0
+ * Stores the colors used inside the application and some other settings.
  */
 class Env {
     final static int gridColor = color(0);
@@ -17,8 +14,6 @@ class Env {
     final static int focusedFontColor = color(255, 0, 0);
     final static int heavyLine = 3;
     final static int lightLine = 1;
-
-    /* color (9) */
 
     /**
      * Returns an integer describing the color when input the color's red, green and
@@ -81,16 +76,5 @@ class Env {
      */
     private static int blue(int color) {
         return 255 - (-color - 1) % 256;
-    }
-
-    /**
-     * Returns a grey-scaled value of a specific color.
-     *
-     * @param color the color to make it grey-scaled
-     * @return the grey-scaled color value
-     */
-    @SuppressWarnings("unused")
-    private static int makeGrey(int color) {
-        return color(0.2989 * red(color) + 0.5870 * green(color) + 0.1141 * blue(color));
     }
 }

@@ -6,7 +6,7 @@
 
     <groupId>157239n</groupId>
     <artifactId>Sudoku</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <build>
         <plugins>
             <plugin>
@@ -17,6 +17,7 @@
                     <target>7</target>
                 </configuration>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -33,6 +34,20 @@
                         <version>5.1.0</version>
                     </dependency>
                 </dependencies>
+            </plugin>
+
+            <plugin>
+              <artifactId>maven-assembly-plugin</artifactId>
+              <configuration>
+                <archive>
+                  <manifest>
+                    <mainClass>com.n157239.Sudoku</mainClass>
+                  </manifest>
+                </archive>
+                <descriptorRefs>
+                  <descriptorRef>jar-with-dependencies</descriptorRef>
+                </descriptorRefs>
+              </configuration>
             </plugin>
         </plugins>
     </build>
