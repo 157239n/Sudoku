@@ -32,7 +32,7 @@ jobs:
       - run: echo "Creating executable jars"
       - run: mvn clean compile assembly:single
       # copy executable to the project directory
-      - run: mv target/*.jar Sudoku.jar
+      - run: mv target/Sudoku-1.0-jar-with-dependencies.jar Sudoku.jar
       # storing the executable jar
       - store_artifacts:
-          path: /Sudoku.jar
+          path: Sudoku.jar
