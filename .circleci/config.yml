@@ -33,3 +33,6 @@ jobs:
       - run: mvn clean compile assembly:single
       # copy executable to the project directory
       - run: mv target/*.jar Sudoku.jar
+      # storing the executable jar
+      - store-artifacts:
+          path: /Sudoku.jar
