@@ -34,5 +34,5 @@ jobs:
       # copy executable to the project directory
       - run: mv target/*.jar Sudoku.jar
       # storing the executable jar
-      - store-artifacts:
+      - store_artifacts:
           path: /Sudoku.jar
